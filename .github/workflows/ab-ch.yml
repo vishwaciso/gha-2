@@ -1,6 +1,7 @@
 name: simple workflow-1st-run
 
 on: push
+workflow_dispatch:
 
 jobs:
   ab-ch: #we can give namving convention
