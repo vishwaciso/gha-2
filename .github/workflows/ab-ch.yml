@@ -6,6 +6,7 @@ name: simple workflow-1st-run-rin
 on:
   push:
     branches: main
+  workflow_dispatch: 
 
 jobs:
   ab-ch: # we can give naming convention
