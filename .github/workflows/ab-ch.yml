@@ -1,0 +1,20 @@
+name: simple workflow
+
+on: push
+
+jobs:
+  ab-ch: #we can give namving convention
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print message
+        run: echo "run the code"
+
+
+# # a workflow contains
+#   n number of jobs
+
+#   jobs contains n number steps
+
+#   steps contains n number tasks also known as a task actions 
+
