@@ -1,4 +1,4 @@
-name: simple workflow-1st-run
+name: simple workflow-1st-run-rin
 
 on: push
 workflow_dispatch:
