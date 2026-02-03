@@ -1,7 +1,11 @@
 name: simple workflow-1st-run-rin
 
+#on:
+ # push:
+
 on:
   push:
+    branches: main
 
 jobs:
   ab-ch: # we can give naming convention
