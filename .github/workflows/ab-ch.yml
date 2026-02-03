@@ -5,7 +5,13 @@ name: simple workflow-1st-run-rin
 
 on:
   push:
-    branches: main
+    branches: 
+      - main
+      - develop
+      - release
+      - hotfix
+      - bugfix
+      - release/**
   workflow_dispatch: 
 
 jobs:
