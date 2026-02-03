@@ -1,21 +1,20 @@
 name: simple workflow-1st-run-rin
 
-on: push
-workflow_dispatch:
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
-  ab-ch: #we can give namving convention
+  ab-ch: # we can give naming convention
     runs-on: ubuntu-latest
 
     steps:
       - name: print message
         run: echo "run the code"
 
-
-# # a workflow contains
+# A workflow contains:
 #   n number of jobs
-
-#   jobs contains n number steps
-
-#   steps contains n number tasks also known as a task actions 
-
+#
+# Jobs contain n number of steps
+#
+# Steps contain n number of tasks (also known as actions)
