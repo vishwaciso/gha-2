@@ -5,20 +5,15 @@ name: simple workflow-1st-run-rin
 
 on:
   push:
-    branches: 
-      - main
-      - develop
-      - release
-      - hotfix
-      - bugfix
-      - release/**
-  workflow_dispatch: 
+    branches: [ "main" ]
 
 jobs:
   ab-ch: # we can give naming convention
     runs-on: ubuntu-latest
-
+    
     steps:
+      - name: checkout code
+        uses: actions/checkout@4
       - name: print message
         run: echo "run the code"
 
